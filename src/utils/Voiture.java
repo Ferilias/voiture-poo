@@ -3,15 +3,15 @@ package utils;
 public class Voiture {
 
 	String marque = "";
-	String vitesse = "";
-	String puissance = "";
+	double vitesse = 0.0;
+	int puissance = 0;
 	
-	public Voiture ( String marque, String vitesse, String puissance) {
+	public Voiture (String marque, double vitesse, int puissance) {
 		this.marque = marque;
 		this.vitesse = vitesse;
 		this.puissance = puissance;
 }
 	public String toString() {
-		return "Marque : "+marque+ " Vitesse de : "+vitesse+ " avec une puissance de "+puissance;
+		return "Marque : "+this.marque+ " Vitesse de : "+this.vitesse+ " avec une puissance de "+this.puissance;
 				}
 }
